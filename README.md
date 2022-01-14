@@ -6,6 +6,8 @@ A fictional music streaming startup, Sparkify, have a growing user base and want
 
 The goal of this project is to build an ETL pipeline that extracts the data from S3, processes them using Spark, and loads the data back into S3 as a set of dimensional tables. This will allow the analytics team to continue finding insights in what songs their users are listening to.
 
+This project is part of the Udacity Data Engineering nanodegree.
+
 ## Databse Schema Design
 
 Data is transferred into a star schema (one fact table where each row references data from multiple dimension tables). This schema design facilitates analytical querying, as it denormalizes data according to the particular aspects of the data we want to dig further into. In other words, it's optimized to minimize the number of JOINs required to query the data. 
